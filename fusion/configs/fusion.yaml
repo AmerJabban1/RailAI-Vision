@@ -1,0 +1,44 @@
+# fusion/configs/fusion.yaml
+
+# Fusion System Configuration
+
+# -------------------------
+# Paths
+# -------------------------
+segmentation_model_path: "../segmentation/weights/best_DeepLabV3plus_railsem19.pth"
+detection_model_path: "../detection/weights/yolov11_best.pt"
+
+image_input_dir: "../dataset/jpgs/rs19"
+output_frames_dir: "../fusion/results/frames"
+output_video_path: "../fusion/results/fusion.mp4"
+
+# -------------------------
+# Segmentation Settings
+# -------------------------
+segmentation_model_type: "deeplabv3plus"
+segmentation_num_classes: 19
+segmentation_input_size: [512, 1024]
+segmentation_track_class_id: 13  # use 12 if confirmed, otherwise 13
+
+# -------------------------
+# Detection Settings
+# -------------------------
+detection_confidence_threshold: 0.25
+detection_iou_threshold: 0.45
+detection_input_size: 640  # input size used by YOLOv11
+
+# -------------------------
+# Visualization
+# -------------------------
+show_labels: true
+overlay_segmentation: true
+mask_overlay_color: [0, 255, 255]  # BGR (Yellowish)
+box_thickness: 2
+mask_opacity: 0.5
+
+# -------------------------
+# Output
+# -------------------------
+generate_video: true
+video_fps: 10
+image_file_format: "jpg"  # Input image extension

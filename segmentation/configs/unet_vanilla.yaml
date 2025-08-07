@@ -1,0 +1,19 @@
+# segmentation/configs/unet_vanilla.yaml
+
+model_name: "UNet-Vanilla"
+num_classes: 19
+in_channels: 3
+image_size: [256, 256]
+batch_size: 32
+num_epochs: 40
+learning_rate: 0.001
+pretrained: false
+ignore_index: 255
+
+dataset_paths:
+  image_dir: "/path/to/jpgs/rs19_val"
+  mask_dir: "/path/to/uint8/rs19_val"
+  split_file: "/path/to/splits/test.txt"
+
+save_path: "weights/best_unet_vanilla.pth"
+results_path: "results/unet_vanilla/"

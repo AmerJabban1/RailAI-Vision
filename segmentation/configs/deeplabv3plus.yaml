@@ -1,0 +1,19 @@
+# segmentation/configs/deeplabv3plus.yaml
+
+model_name: "DeepLabV3+"
+num_classes: 19
+in_channels: 3
+image_size: [256, 256]
+batch_size: 32
+num_epochs: 40
+learning_rate: 0.001
+pretrained: true
+ignore_index: 255
+
+dataset_paths:
+  image_dir: "/path/to/jpgs/rs19_val"
+  mask_dir: "/path/to/uint8/rs19_val"
+  split_file: "/path/to/splits/test.txt"
+
+save_path: "weights/best_deeplabv3plus.pth"
+results_path: "results/deeplabv3plus/"

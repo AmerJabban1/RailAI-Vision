@@ -1,0 +1,20 @@
+# segmentation/configs/unet_pretrained.yaml
+
+model:
+  name: UNet-Pretrained
+  encoder_name: resnet34
+  encoder_weights: imagenet
+train:
+  batch_size: 32
+  num_epochs: 40
+  learning_rate: 0.001
+  loss: CrossEntropy
+  optimizer: Adam
+  scheduler: ReduceLROnPlateau
+  ignore_index: 255
+  input_size: [256, 256]
+  seed: 42
+  save_dir: weights/
+  log_dir: results/
+  save_model: true
+  plot_results: true

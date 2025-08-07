@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "RailAI-Vision: Real-Time Railway Environment Perception Framework"
+authors:
+  - family-names: Elmuhammedcebben
+    given-names: Muhammed Amir
+    orcid: "https://orcid.org/0000-0003-1398-3002"
+  - family-names: Aydın
+    given-names: İlhan
+  - family-names: Sevi
+    given-names: Mehmet
+date-released: 2025-08-07
+version: "1.0.0"
+doi: "10.47072/DEMIRYOLU.1645019"
+license: "MIT"
+repository-code: "https://github.com/AmerJabban1/RailAI-Vision"
+url: "https://github.com/AmerJabban1/RailAI-Vision"
+type: software

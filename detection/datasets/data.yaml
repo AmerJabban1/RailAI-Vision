@@ -1,0 +1,8 @@
+# dataset/data.yaml
+
+train: datasets/train/images
+val: datasets/valid/images
+test: datasets/test/images
+
+nc: 5
+names: ['Obstacle', 'Person', 'Rail', 'Signal-and-Sign', 'Vehicle']

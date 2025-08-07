@@ -1,0 +1,11 @@
+# configs/yolov9.yaml
+
+model_name: "YOLOv9"
+model_type: "yolov9"
+model_architecture: "gelan-c.pt"
+epochs: 50
+img_size: 640
+batch: 16
+data_yaml: "datasets/data.yaml"
+weights_dir: "weights"
+results_dir: "runs/detect"

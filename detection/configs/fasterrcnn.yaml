@@ -1,0 +1,32 @@
+# configs/fasterrcnn.yaml
+
+model:
+  name: fasterrcnn_resnet50_fpn
+  pretrained: true
+  num_classes: 6  # 5 classes + 1 background
+
+train:
+  batch_size: 4
+  num_epochs: 30
+  learning_rate: 0.005
+  momentum: 0.9
+  weight_decay: 0.0005
+  step_size: 10
+  gamma: 0.1
+  print_freq: 10
+  num_classes: 6
+
+input:
+  image_size: [640, 640]  # Can be flexible, dataset-driven
+
+paths:
+  dataset_root: datasets
+  train_folder: train
+  valid_folder: valid
+  test_folder: test
+  output_dir: results
+  save_model_path: weights/fasterrcnn_best.pth
+
+hardware:
+  num_workers: 4
+  device: cuda  # or "cpu"
