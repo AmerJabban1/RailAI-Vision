@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/Python-3.10-blue"  alt="Python-3.10"/>
   <img src="https://img.shields.io/badge/Status-Research-orange"  alt="Status-Research"/>
   <img src="https://img.shields.io/badge/License-Academic--only-lightgrey"  alt="License-Academic--only"/>
-  [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/AmerJabban1/RailAI-Vision)
+  <a href="https://deepwiki.com/AmerJabban1/RailAI-Vision"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
 </p>
 
 ---
